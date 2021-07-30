@@ -1,25 +1,17 @@
-//Mail check to enter
+// 1- generare numeri casuali da 1 a 6 sia per utente che per CPU
+function LanciaDadi() {
+    var numeroUtente =Math.floor(Math.random() * 6);
+    console.log("Il tuo numero " + numeroUtente);
 
-// //1- chiedere all'utente la sua mail
-var richiestaMail = prompt("Inserisci la tua e-mail per accedere");
+    var numeroCpu =Math.floor(Math.random() * 6);
+    console.log("Il numero della CPU " + numeroCpu);
 
+// 2- stabilire che vince (ovvero punteggio più alto)
 
-// //2- verificare se è nella lista e quindi può accedere
-var listaMail = ["ciccio@ciccio.com", "pippo@pippo.com", "birra@birra.com", "tossisco@forte.com", "lancio@dadi.com" ];
-console.log(listaMail);
+    if (numeroUtente > numeroCpu) {
+        alert("hai vinto maledetto fortunello!!");
+    } else {
+        alert("hai perso torna a rubare le autoradio!!");
+    }
 
-for (var i = 0;  i < 5; i++) {
-    if (richiestaMail == listaMail[i]) ;
-    var accessoConsentito = alert("Grande, andiamo a spaccarci!!");
-
-}   else {
-    var accessoNegato = alert("Non fai parte della banda Bro, sparisci");
-
- {
-//     var autorizzato = alert("Utente riconosciuto, puoi accedere");
-// } else {
-//     var accessoNegato = alert("Non fai parte della banda Bro, sparisci");
-// }
-
-// //for (var i = )
-// //3 stampare messaggio a video se può accedere o no 
+}
