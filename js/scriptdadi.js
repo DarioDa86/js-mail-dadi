@@ -1,5 +1,4 @@
 //Mail check to enter
-function accessMail() {
 
 // //1- chiedere all'utente la sua mail
 var richiestaMail = prompt("Inserisci la tua e-mail per accedere");
@@ -9,8 +8,9 @@ var richiestaMail = prompt("Inserisci la tua e-mail per accedere");
 var listaMail = ["ciccio@ciccio.com", "pippo@pippo.com", "birra@birra.com", "tossisco@forte.com", "lancio@dadi.com" ];
 console.log(listaMail);
 
-for () {
-    if (richiestaMail.includes(listaMail)) 
+for (var i = 0;  i < 5; i++) {
+    if (richiestaMail == listaMail[i]) ;
+    var accessoConsentito = alert("Grande, andiamo a spaccarci!!");
 
 }   else {
     var accessoNegato = alert("Non fai parte della banda Bro, sparisci");
